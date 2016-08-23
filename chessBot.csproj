@@ -223,18 +223,6 @@
       <UserCode>true</UserCode>
       <id>8e73ec6d-a388-486b-85fb-240682233cb1</id>
     </Compile>
-    <Compile Include="TestingGit_Ned.cs">
-      <BoundTo>333e8318-cc44-48d5-873b-44e216e645cc</BoundTo>
-      <DependentUpon>TestingGit-Ned.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>af89042f-26f0-4c50-9aa2-d4f42af0891b</id>
-    </Compile>
-    <Compile Include="TestingGit_Ned.UserCode.cs">
-      <BoundTo>333e8318-cc44-48d5-873b-44e216e645cc</BoundTo>
-      <DependentUpon>TestingGit-Ned.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>4132ceb6-d97e-41bb-8647-69bfc096955e</id>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -310,11 +298,6 @@
       <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
       <id>acb237aa-5822-491d-bef9-1a1417644ee0</id>
       <recordtableid>1619d7f2-08fa-4d72-85df-cbefc3dd1728</recordtableid>
-    </None>
-    <None Include="TestingGit-Ned.rxrec">
-      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
-      <id>333e8318-cc44-48d5-873b-44e216e645cc</id>
-      <recordtableid>306e10a9-1d3f-461d-878e-15c3bdf3e73c</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
