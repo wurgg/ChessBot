@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{6F3D2F45-3870-4AE2-B43B-CE59893512D2}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>chessBot</RootNamespace>
+    <AssemblyName>chessBot</AssemblyName>
+    <RanorexVersion>6.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>c241432e-854b-438a-a7ff-46b68b7b0c54</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>fec423b1-143d-484e-9500-8a00750fc5f0</id>
+    </Compile>
+    <Compile Include="chessBotRepository.cs">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <DependentUpon>chessBotRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>848c7505-a32b-4fb6-ba8a-bf75f124cd99</id>
+    </Compile>
+    <Compile Include="Login\Check_Login.cs">
+      <DependentUpon>Check_Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d8c3eea2-bb5e-4af9-bb6c-88ee53136e26</id>
+      <BoundTo>4280297f-0130-4b86-acc1-f78c267813d8</BoundTo>
+    </Compile>
+    <Compile Include="Login\Check_Login.UserCode.cs">
+      <DependentUpon>Check_Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b7a44d3-e9ff-4322-a379-6e589a225111</id>
+      <BoundTo>4280297f-0130-4b86-acc1-f78c267813d8</BoundTo>
+    </Compile>
+    <Compile Include="Login\Log_In.cs">
+      <BoundTo>a33f4332-8116-4cf3-b15d-6b222fed8f8e</BoundTo>
+      <DependentUpon>Log_In.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ec5db020-93e1-45d5-a249-ac7e2ba450dc</id>
+    </Compile>
+    <Compile Include="Login\Log_In.UserCode.cs">
+      <BoundTo>a33f4332-8116-4cf3-b15d-6b222fed8f8e</BoundTo>
+      <DependentUpon>Log_In.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fe0f6bb6-7e74-400b-adb8-9838b2d0fb44</id>
+    </Compile>
+    <Compile Include="Loop\Get_Board_State.cs">
+      <BoundTo>74ef057f-ac49-4f24-a18e-f7c96d59eb2c</BoundTo>
+      <DependentUpon>Get_Board_State.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>357e38ff-a23e-4da1-9d96-1385ac4a6c4e</id>
+    </Compile>
+    <Compile Include="Loop\Get_Board_State.UserCode.cs">
+      <BoundTo>74ef057f-ac49-4f24-a18e-f7c96d59eb2c</BoundTo>
+      <DependentUpon>Get_Board_State.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0d1389ab-7900-46a8-8042-be28ed726bda</id>
+    </Compile>
+    <Compile Include="Loop\Get_Game_State.cs">
+      <BoundTo>189fd4bc-527b-41bc-9570-e8d833507549</BoundTo>
+      <DependentUpon>Get_Game_State.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6e7ee936-07e0-496c-b859-b949fc6ea9f8</id>
+    </Compile>
+    <Compile Include="Loop\Get_Game_State.UserCode.cs">
+      <BoundTo>189fd4bc-527b-41bc-9570-e8d833507549</BoundTo>
+      <DependentUpon>Get_Game_State.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e7982362-f263-48ed-af85-5473999d9d63</id>
+    </Compile>
+    <Compile Include="Loop\Get_Turn.cs">
+      <BoundTo>4160652e-75fa-47ff-851a-794b6e3b30d4</BoundTo>
+      <DependentUpon>Get_Turn.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0676595-b3f4-4ff4-b65c-7199f445f9e3</id>
+    </Compile>
+    <Compile Include="Loop\Get_Turn.UserCode.cs">
+      <BoundTo>4160652e-75fa-47ff-851a-794b6e3b30d4</BoundTo>
+      <DependentUpon>Get_Turn.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e68ad816-e13d-4701-94db-017091b7b8c4</id>
+    </Compile>
+    <Compile Include="Loop\LogicFlow.cs">
+      <id>2498d1a0-1235-4ad3-a47f-cf702ed2d4f0</id>
+    </Compile>
+    <Compile Include="Loop\Make_Move.cs">
+      <BoundTo>56b0c76a-f0af-4d40-9403-5bdaa7ea4e43</BoundTo>
+      <DependentUpon>Make_Move.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>03a06701-d96c-42f8-a718-e2732fe2233b</id>
+    </Compile>
+    <Compile Include="Loop\Make_Move.UserCode.cs">
+      <BoundTo>56b0c76a-f0af-4d40-9403-5bdaa7ea4e43</BoundTo>
+      <DependentUpon>Make_Move.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>841a51b5-095c-4445-82df-f33d292366f6</id>
+    </Compile>
+    <Compile Include="Loop\Simulate_Player_Move.cs">
+      <BoundTo>e54db55b-94fa-4253-a5d5-04ffd6ece1a7</BoundTo>
+      <DependentUpon>Simulate_Player_Move.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c905114-4fc0-4b7d-8c6a-fb072ddf476f</id>
+    </Compile>
+    <Compile Include="Loop\Simulate_Player_Move.UserCode.cs">
+      <BoundTo>e54db55b-94fa-4253-a5d5-04ffd6ece1a7</BoundTo>
+      <DependentUpon>Simulate_Player_Move.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8dc0f1b6-8738-40e1-8979-36b114b4f654</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>519d18d1-d48a-4281-ad39-a8a80ad88056</id>
+    </Compile>
+    <Compile Include="Start_Game\Start_CPU_Game.cs">
+      <BoundTo>8854eccb-5155-4fb2-980e-9653a209e6a2</BoundTo>
+      <DependentUpon>Start_CPU_Game.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e8336c59-e4b8-4427-8e51-f262d0ab94af</id>
+    </Compile>
+    <Compile Include="Start_Game\Start_CPU_Game.UserCode.cs">
+      <BoundTo>8854eccb-5155-4fb2-980e-9653a209e6a2</BoundTo>
+      <DependentUpon>Start_CPU_Game.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff89d78c-b8c5-466f-8e7a-7c90a2ca685b</id>
+    </Compile>
+    <Compile Include="Start_Game\Start_Player_Game.cs">
+      <BoundTo>6b532dfb-7fe8-4b6b-9b5d-145e0390abd2</BoundTo>
+      <DependentUpon>Start_Player_Game.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a02158e1-291d-4c42-8574-742187ee2a06</id>
+    </Compile>
+    <Compile Include="Start_Game\Start_Player_Game.UserCode.cs">
+      <BoundTo>6b532dfb-7fe8-4b6b-9b5d-145e0390abd2</BoundTo>
+      <DependentUpon>Start_Player_Game.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2f55cc1c-9fda-4bbd-b21f-c883ceb93115</id>
+    </Compile>
+    <Compile Include="Stats\Get_Stats.cs">
+      <BoundTo>40127046-5e9b-4f7b-8966-11508e9f4f54</BoundTo>
+      <DependentUpon>Get_Stats.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7c2ca7fa-4b4f-422d-a094-75c2d6f46c68</id>
+    </Compile>
+    <Compile Include="Stats\Get_Stats.UserCode.cs">
+      <BoundTo>40127046-5e9b-4f7b-8966-11508e9f4f54</BoundTo>
+      <DependentUpon>Get_Stats.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>91c7e7d1-13e3-468c-92f5-628ff5ac512e</id>
+    </Compile>
+    <Compile Include="Stats\Record_Stats.cs">
+      <BoundTo>cc233ef9-0dc8-458c-9c7b-60ad0bb8ea76</BoundTo>
+      <DependentUpon>Record_Stats.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>38d4859b-11ea-431f-8a66-dcf7288d43fe</id>
+    </Compile>
+    <Compile Include="Stats\Record_Stats.UserCode.cs">
+      <BoundTo>cc233ef9-0dc8-458c-9c7b-60ad0bb8ea76</BoundTo>
+      <DependentUpon>Record_Stats.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>66ceaf6d-5d20-4cce-822b-ff93c513d03a</id>
+    </Compile>
+    <Compile Include="Teardown\Shutdown.cs">
+      <BoundTo>acb237aa-5822-491d-bef9-1a1417644ee0</BoundTo>
+      <DependentUpon>Shutdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d71efd9c-777d-4365-8407-1f97cdb42a6f</id>
+    </Compile>
+    <Compile Include="Teardown\Shutdown.UserCode.cs">
+      <BoundTo>acb237aa-5822-491d-bef9-1a1417644ee0</BoundTo>
+      <DependentUpon>Shutdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e73ec6d-a388-486b-85fb-240682233cb1</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>18cc2e06-007a-45f4-91fb-c55cbd3fe697</id>
+    </None>
+    <None Include="chessBotRepository.rximg">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <DependentUpon>chessBotRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>285b99c1-bcdd-47a4-b2a2-23b0ad4c636e</id>
+    </None>
+    <None Include="chessBotRepository.rxrep">
+      <id>c241432e-854b-438a-a7ff-46b68b7b0c54</id>
+      <repoid>2e33c977-712c-407d-a119-aaaff9ece379</repoid>
+      <reporootid>4282da7f-35b6-4727-9d35-7f7655db4635</reporootid>
+    </None>
+    <None Include="Login\Check_Login.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>4280297f-0130-4b86-acc1-f78c267813d8</id>
+      <recordtableid>650304c1-c78a-4914-a7b2-9b31cd28edc7</recordtableid>
+    </None>
+    <None Include="Login\Log_In.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>a33f4332-8116-4cf3-b15d-6b222fed8f8e</id>
+      <recordtableid>7fe7764a-45d9-417f-9206-985f3a160f74</recordtableid>
+    </None>
+    <None Include="Loop\Get_Board_State.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>74ef057f-ac49-4f24-a18e-f7c96d59eb2c</id>
+      <recordtableid>543a5eea-8bc5-4250-afd9-e593ab70a348</recordtableid>
+    </None>
+    <None Include="Loop\Get_Game_State.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>189fd4bc-527b-41bc-9570-e8d833507549</id>
+      <recordtableid>c677b3c1-2b03-4ddb-89b8-550f197883cb</recordtableid>
+    </None>
+    <None Include="Loop\Get_Turn.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>4160652e-75fa-47ff-851a-794b6e3b30d4</id>
+      <recordtableid>eb8548aa-b754-43a9-b9e2-a7aceedfcc4c</recordtableid>
+    </None>
+    <None Include="Loop\Make_Move.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>56b0c76a-f0af-4d40-9403-5bdaa7ea4e43</id>
+      <recordtableid>d3ec0475-f2a7-44d2-85e4-c8be621034eb</recordtableid>
+    </None>
+    <None Include="Loop\Simulate_Player_Move.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>e54db55b-94fa-4253-a5d5-04ffd6ece1a7</id>
+      <recordtableid>19a1f936-8283-402a-8d69-ec1a2166cf1c</recordtableid>
+    </None>
+    <None Include="Start_Game\Start_CPU_Game.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>8854eccb-5155-4fb2-980e-9653a209e6a2</id>
+      <recordtableid>72ceaec2-dd7f-407a-8bfa-7562161e6f61</recordtableid>
+    </None>
+    <None Include="Start_Game\Start_Player_Game.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>6b532dfb-7fe8-4b6b-9b5d-145e0390abd2</id>
+      <recordtableid>72602bd6-cec5-4b80-a7b7-9d28f367714a</recordtableid>
+    </None>
+    <None Include="Stats\Get_Stats.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>40127046-5e9b-4f7b-8966-11508e9f4f54</id>
+      <recordtableid>8d1bf36a-dd93-4c04-9720-fc35576c943e</recordtableid>
+    </None>
+    <None Include="Stats\Record_Stats.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>cc233ef9-0dc8-458c-9c7b-60ad0bb8ea76</id>
+      <recordtableid>63a2377c-7f19-49ed-865f-ecb27d0aa409</recordtableid>
+    </None>
+    <None Include="Teardown\Shutdown.rxrec">
+      <BoundTo>c241432e-854b-438a-a7ff-46b68b7b0c54</BoundTo>
+      <id>acb237aa-5822-491d-bef9-1a1417644ee0</id>
+      <recordtableid>1619d7f2-08fa-4d72-85df-cbefc3dd1728</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chessBot.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>9fda7949-2022-400e-93e1-f076547dcb9b</id>
+    </Content>
+    <Content Include="chessBot.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>bcf05841-c42f-4170-b6fb-cad3d423d441</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Login">
+      <id>050a8d00-cbe9-4118-bc98-b076a1d01e89</id>
+    </Folder>
+    <Folder Include="Loop">
+      <id>324cf58e-b6d3-4e20-8c24-a8a5affc02e2</id>
+    </Folder>
+    <Folder Include="Teardown">
+      <id>505efb85-bdd1-4ce9-9486-1889b354e3f9</id>
+    </Folder>
+    <Folder Include="Stats">
+      <id>277cf288-30e5-4b6b-9e27-49c502c6ef4b</id>
+    </Folder>
+    <Folder Include="Start_Game">
+      <id>c3e62312-b285-4dbd-8b49-15eec4874321</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+</Project>

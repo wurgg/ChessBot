@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="chessBot"
+      id="bbcfb1ae-218c-48e8-afb5-495fb2268e23"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="chessBot"
+      id="bbcfb1ae-218c-48e8-afb5-495fb2268e23"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="chessBotRepository"
+id="2e33c977-712c-407d-a119-aaaff9ece379"
+rxversion="6.0">
+  <codegen
+  classname="chessBotRepository"
+  namespace="chessBot"/>
+  <rootfolder
+  name="Root"
+  id="4282da7f-35b6-4727-9d35-7f7655db4635"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

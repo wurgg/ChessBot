@@ -1,0 +1,8 @@
+C:\Users\jwilbur\Documents\Ranorex\RanorexStudio Projects\chessBot\bin\Debug\chessBot.rxtmg
+C:\Users\jwilbur\Documents\Ranorex\RanorexStudio Projects\chessBot\bin\Debug\chessBot.rxtst
+C:\Users\jwilbur\Documents\Ranorex\RanorexStudio Projects\chessBot\bin\Debug\chessBot.exe.config
+C:\Users\jwilbur\Documents\Ranorex\RanorexStudio Projects\chessBot\bin\Debug\chessBot.exe
+C:\Users\jwilbur\Documents\Ranorex\RanorexStudio Projects\chessBot\bin\Debug\chessBot.pdb
+C:\Users\jwilbur\Documents\Ranorex\RanorexStudio Projects\chessBot\obj\x86\Debug\chessBot.csprojResolveAssemblyReference.cache
+C:\Users\jwilbur\Documents\Ranorex\RanorexStudio Projects\chessBot\obj\x86\Debug\chessBot.exe
+C:\Users\jwilbur\Documents\Ranorex\RanorexStudio Projects\chessBot\obj\x86\Debug\chessBot.pdb

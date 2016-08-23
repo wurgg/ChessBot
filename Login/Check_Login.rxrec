@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="650304c1-c78a-4914-a7b2-9b31cd28edc7"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		Check_Login
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Check_Login"
+	namespace="chessBot.Login"/>
+	<variables/>
+	<recorditems/>
+	<repository
+	name="chessBotRepository"
+	id="2e33c977-712c-407d-a119-aaaff9ece379"
+	rxversion="6.0"
+	relativepath="..\chessBotRepository.rxrep">
+		<codegen
+		classname="chessBotRepository"
+		namespace="chessBot"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="4282da7f-35b6-4727-9d35-7f7655db4635"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Check_Login.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>
